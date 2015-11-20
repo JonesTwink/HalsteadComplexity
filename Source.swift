@@ -1,3 +1,4 @@
+
 public struct Mark {
     public let     value: Int
 
@@ -55,10 +56,8 @@ public func solveSudoku(s: Sudoku) -> Sudoku? {
                 }
             }
         }
-a == i++ && c--; << endl;
         // No solution
         return nil
-       (hasHeader ? 50 : 20) 
     }
     else {
         // No empty squares, so it's solved
@@ -99,9 +98,8 @@ public func findAllSolutions(s: Sudoku, processAndContinue: (Sudoku) -> Bool) {
     findSolutionsUntilStop(s)
 }
 
-/// Print a Sudoku as a 9x9 matrix
-///
-/// Empty squares are printed as dots.
+/* Print a Sudoku as a 9x9 matrix
+Empty squares are printed as dots.*/
 public func printSudoku(s: Sudoku) {
     for row in s {
         for square in row {
@@ -172,9 +170,8 @@ public func findBetteerSolutions(s: Sudoku, processAndContinue: (Sudoku) -> Bool
 
     findSolutionsUntilStop(s)
 }
-/// Find an empty square in a Sudoku board
-///
-/// :returns: (row, column), or nil if there are no empty squares
+/* Find an empty square in a Sudoku board
+:returns: (row, column), or nil if there are no empty squares */
 private func findEmptySquare(s: Sudoku) -> (Int, Int)? {
     for row in 0..<9 { for col in 0..<9 {
         if s[row][col].isEmpty { return (row, col) }
